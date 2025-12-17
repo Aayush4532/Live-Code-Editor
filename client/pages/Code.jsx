@@ -25,8 +25,8 @@ export default function CodeEditor() {
 
     const url =
       mode === "create"
-        ? `ws://live-code-editor-fmxz.onrender.com/create?roomId=${roomId}&password=${password}`
-        : `ws://live-code-editor-fmxz.onrender.com/join?roomId=${roomId}&password=${password}`
+        ? `wss://live-code-editor-fmxz.onrender.com/create?roomId=${roomId}&password=${password}`
+        : `wss://live-code-editor-fmxz.onrender.com/join?roomId=${roomId}&password=${password}`
 
     const ws = new WebSocket(url)
     wsRef.current = ws
