@@ -77,7 +77,7 @@ export default function CodeEditor() {
 
   if (!connected) {
     return (
-      <div className="h-screen flex items-center justify-center bg-[#020103] text-white">
+      <div className="h-screen flex w-screen items-center justify-center bg-[#020103] text-white">
         <div className="flex flex-col items-center gap-4">
           <div className="h-10 w-10 rounded-full border-4 border-green-400 border-t-transparent animate-spin" />
           <p className="text-lg text-zinc-300">Connecting to room…</p>
